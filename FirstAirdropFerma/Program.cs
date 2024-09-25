@@ -1,3 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+using FirstAirdropFerma.Utils;
 
-Console.WriteLine("Hello, World!");
+var wallets = ReadWalletsInfo.GetWalletList();
+
+/*
+ * 1.[] Get tokens from faucet
+ */
