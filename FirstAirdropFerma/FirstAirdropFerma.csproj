@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="BlockchainInteraction\" />
+      <PackageReference Include="Nethereum.Web3" Version="4.25.0" />
     </ItemGroup>
 
 </Project>
