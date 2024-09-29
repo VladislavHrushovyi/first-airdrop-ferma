@@ -13,4 +13,9 @@ public class BlockchainClient
         _account = new Account(privateKey);
         _web3 = new Web3(_account, rpcUrl);
     }
+
+    public async Task ExecuteRawTransaction(string TxData)
+    {
+        
+    }
 }
