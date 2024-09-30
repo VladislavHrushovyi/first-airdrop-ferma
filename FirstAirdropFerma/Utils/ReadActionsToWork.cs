@@ -9,6 +9,8 @@ public class ReadActionsToWork
     public List<Command> GetCommandList()
     {
         var commandText = File.ReadAllLines(FilePath);
-        return new List<Command>();
+        return commandText.Select(x => x.Trim())
+            .Select(x => new Command(){CommandName = x})
+            .ToList();
     }
 }
