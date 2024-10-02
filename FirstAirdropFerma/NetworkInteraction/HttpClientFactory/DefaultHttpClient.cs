@@ -1,4 +1,4 @@
-﻿namespace FirstAirdropFerma.BlockchainInteraction.HttpClientFactory;
+﻿namespace FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
 
 public class DefaultHttpClient
 {
