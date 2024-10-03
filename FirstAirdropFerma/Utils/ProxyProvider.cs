@@ -2,7 +2,7 @@
 
 public class ProxyProvider
 {
-    private const string FilePath = @"./proxy.txt";
+    private const string FilePath = "./proxy.txt";
     public static Dictionary<string, bool> ProxyMap { get; } = new();
 
     static ProxyProvider()

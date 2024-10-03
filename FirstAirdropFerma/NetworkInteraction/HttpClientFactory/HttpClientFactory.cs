@@ -2,7 +2,7 @@
 
 public class HttpClientFactory
 {
-    public static HttpClient CreateHttpClient(string? proxy = null)
+    public static HttpClient CreateHttpClient(string baseUrl, string? proxy = null)
     {
         if (proxy == null)
         {
