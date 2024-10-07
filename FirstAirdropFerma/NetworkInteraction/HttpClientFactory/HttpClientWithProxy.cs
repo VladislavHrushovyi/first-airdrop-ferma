@@ -1,11 +1,33 @@
-﻿namespace FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
+﻿using System.Net;
 
-public class HttpClientWithProxy
+namespace FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
+
+public class HttpClientWithProxy : BaseHttpClient
 {
-    public HttpClient HttpClient { get; }
 
-    public HttpClientWithProxy(string empty, string proxy)
+    public HttpClientWithProxy(string baseAddress, string proxyLine)
     {
-        throw new NotImplementedException();
+        var proxySplit = proxyLine.Split(":");
+        var proxy = new WebProxy()
+        {
+            Address = new Uri($"http://{proxySplit[0]}:{proxySplit[1]}"),
+            BypassProxyOnLocal = false,
+            UseDefaultCredentials = false,
+            
+            Credentials = new NetworkCredential()
+            {
+                UserName = proxySplit[2],
+                Password = proxySplit[3]
+            }
+            
+        };
+
+        var httpClientHandler = new HttpClientHandler()
+        {
+            Proxy = proxy
+        };
+
+        HttpClient = new HttpClient(httpClientHandler);
+        SetDefaultHeaders();
     }
 }

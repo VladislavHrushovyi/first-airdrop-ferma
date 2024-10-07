@@ -1,11 +1,10 @@
 ﻿namespace FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
 
-public class DefaultHttpClient
+public class DefaultHttpClient : BaseHttpClient
 {
-    public HttpClient HttpClient { get; }
-
-    public DefaultHttpClient(string empty)
+    public DefaultHttpClient(string baseAddress)
     {
-        throw new NotImplementedException();
+        HttpClient = new HttpClient();
+        SetDefaultHeaders();
     }
 }
