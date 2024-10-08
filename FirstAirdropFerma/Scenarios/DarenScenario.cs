@@ -1,5 +1,5 @@
-﻿using FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
-using FirstAirdropFerma.NetworkInteraction.HttpInteraction;
+﻿using WebInteracting.HttpClientFactory;
+using WebInteracting.HttpInteraction;
 
 namespace FirstAirdropFerma.Scenarios;
 

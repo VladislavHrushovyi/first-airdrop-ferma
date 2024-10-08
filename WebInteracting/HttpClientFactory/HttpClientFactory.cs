@@ -1,4 +1,4 @@
-﻿namespace FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
+﻿namespace WebInteracting.HttpClientFactory;
 
 public class HttpClientFactory
 {

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace FirstAirdropFerma.NetworkInteraction.HttpClientFactory;
+namespace WebInteracting.HttpClientFactory;
 
 public class HttpClientWithProxy : BaseHttpClient
 {

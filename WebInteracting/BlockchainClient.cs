@@ -1,7 +1,7 @@
 ﻿using Nethereum.Web3;
 using Nethereum.Web3.Accounts;
 
-namespace FirstAirdropFerma.NetworkInteraction;
+namespace WebInteracting;
 
 public class BlockchainClient
 {
